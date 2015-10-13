@@ -22,6 +22,7 @@ gpclibPermit()
 CSB <- read.csv("../resources/CSB_FIPS_GIS.csv")
 CSB_FID <- read.csv("../resources/gis_joinfile.csv")
 
+
 CSB_FID$FID <- as.numeric(CSB_FID$FID)
 
 CSB$FIPS <- paste0(str_pad(as.character(CSB$FIPS), 3, side="left", pad="0"),"G")
